@@ -7,45 +7,54 @@
 </head>
 <body>
 
-  <h1>Farm Clicker</h1>
-
-  <!-- Production Section -->
-   <div class="container">
-    <div class="section">
-      <h2>FOOD</h2>
-      <div id="wheat-count">Loading...</div>
-     <div id="farmer-count">Loading...</div>
-    </div>
+<h1>Farm Clicker</h1>
+  <div class="main-layout">
+    <!-- Partie gauche : production + achats -->
+    <div class="left-panel">
+      <!-- Production Section -->
+      <div class="container">
+        <div class="section">
+          <h2>FOOD</h2>
+          <div id="wheat-count">Loading...</div>
+          <div id="farmer-count">Loading...</div>
+        </div>
       
-    <div class="section wood">
-      <h2>Wood</h2>
-      <div id="wood-count">Loading...</div>
-      <div id="lumberjack-count">Loading...</div>
-    </div>
-
-    <div class="section ore">
-      <h2>Ore</h2>
-      <div id="ore-count">Loading...</div>
-      <div id="miner-count">Loading...</div>
-  </div>
-
-  
-  <!-- Purchase Section -->
-  <div class="container">
-    <div class="section">
-      <div class="button-row">
-        <button id="buy-farmer-btn" onclick="buyFarmer()">Buy Farmer 👨‍🌾 (10 wheat)</button>
-      </div>
-
-      <div class="button-row">
-        <button id="buy-lumberjack-btn" onclick="buyLumberjacks()">Buy Lumberjacks  🪓  (15 wheat)</button>
+      <div class="section wood">
+        <h2>Wood</h2>
+        <div id="wood-count">Loading...</div>
+        <div id="lumberjack-count">Loading...</div>
      </div>
 
-      <div class="button-row">
-        <button id="buy-miner-btn" onclick="buyMiner()">Buy Miner ⛏️ (15 wheat)</button>
+      <div class="section ore">
+        <h2>Ore</h2>
+        <div id="ore-count">Loading...</div>
+        <div id="miner-count">Loading...</div>
+      </div>
+
+  
+      <!-- Purchase Section -->
+      <div class="container">
+        <div class="section">
+          <div class="button-row">
+            <button id="buy-farmer-btn" onclick="buyFarmer()">Buy Farmer 👨‍🌾 (10 wheat)</button>
+          </div>
+
+        <div class="button-row">
+          <button id="buy-lumberjack-btn" onclick="buyLumberjacks()">Buy Lumberjacks  🪓  (15 wheat)</button>
+        </div>
+
+        <div class="button-row">
+          <button id="buy-miner-btn" onclick="buyMiner()">Buy Miner ⛏️ (15 wheat)</button>
+        </div>
       </div>
     </div>
-  </div>
+
+    <!-- Partie droite : vide pour l'instant -->
+    <div class="right-panel">
+      <h2>Coming Soon</h2>
+      <p>Combat system or other features will be here.</p>
+    </div>
+  </div>  
 
   <script src="script.js"></script>
 </body>
