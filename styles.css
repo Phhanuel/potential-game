@@ -35,3 +35,25 @@ button:disabled {
   color: #666;
   cursor: not-allowed;
 }
+
+.main-layout {
+  display: flex;
+  height: 100vh;
+}
+
+/* Colonne gauche */
+.left-panel {
+  width: 40%; /* ou 30% si tu veux un peu plus étroit */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+/* Colonne droite vide */
+.right-panel {
+  flex: 1; /* prend le reste de l’espace */
+  background-color: #ffffff;
+  padding: 20px;
+}
