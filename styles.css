@@ -6,8 +6,8 @@
     "Ore Ressource3 Ressource2 Info2" 20%
     "Info Info Ressource4 Combat" 20%
     "Craft Craft Craft Combat" auto
-    / 20% 20% 15% auto;
-  gap: 20px;
+    / 15% 15% 10% auto;
+  gap: 10px;
 }
 
 
@@ -34,8 +34,8 @@
 button {
   flex: 1;
   min-width: 80px;
-  font-size: 32px;
-  padding: 10px;
+  font-size: 26px;
+  padding: 5px;
   cursor: pointer;
 }
 
