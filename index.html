@@ -25,7 +25,7 @@
   </div>
 
   <div class="Ressource1">
-    <h2>Other Resource</h2>
+    <h2>Resource 1</h2>
     <div id="resource1-count">0</div>
   </div>
 
@@ -76,9 +76,15 @@
   <div class="Craft">
     <h2>Craft</h2>
     <div class="button-row">
-      <button id="buy-farmer-btn" onclick="buyFarmer()">Buy Farmer 🌾 (10 wheat)</button>
-      <button id="buy-lumberjack-btn" onclick="buyLumberjacks()">Buy Lumberjack 🪓 (15 wheat)</button>
-      <button id="buy-miner-btn" onclick="buyMiner()">Buy Miner ⛏️ (15 wheat)</button>
+      
+      <button id="buy-farmer-btn" onclick="buyFarmer()">Farmer (10 wheat)
+         <div id="farmer-count">Loading...</div>
+      </button>
+
+      <button id="buy-lumberjack-btn" onclick="buyLumberjacks()">Lumberjack (15 wheat)</button>
+
+      <button id="buy-miner-btn" onclick="buyMiner()">Miner (15 wheat)</button>
+
     </div>
   </div>
 

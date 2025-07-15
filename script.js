@@ -41,14 +41,14 @@ function buyMiner() { // Function to buy a miner
 }
 
 function updateDisplay() { // Function to update the display
-  document.getElementById("wheat-count").textContent = `You have ${wheat} wheat`;
-  document.getElementById("farmer-count").textContent = `You have ${farmers} farmers`;
+  document.getElementById("wheat-count").textContent = `${wheat} wheat`;
+  document.getElementById("farmer-count").textContent = `${farmers} farmers`;
 
-  document.getElementById("wood-count").textContent = `You have ${wood} wood`;
-  document.getElementById("lumberjack-count").textContent = `You have ${lumberjacks} lumberjacks`;
+  document.getElementById("wood-count").textContent = `${wood} wood`;
+  document.getElementById("lumberjack-count").textContent = `${lumberjacks} lumberjacks`;
 
-  document.getElementById("ore-count").textContent = `You have ${ore} wood`;
-  document.getElementById("miner-count").textContent = `You have ${miners} lumberjacks`;
+  document.getElementById("ore-count").textContent = `${ore} ore`;
+  document.getElementById("miner-count").textContent = `${miners} miners`;
 
 
   document.getElementById("buy-farmer-btn").disabled = wheat < farmerCost; // Disable button if not enough wheat
