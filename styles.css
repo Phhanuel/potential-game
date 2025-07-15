@@ -1,3 +1,16 @@
+/* RESET & STRUCTURE */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100vh;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
 .layout {
   width: 100%;
   height: 100%;
@@ -8,7 +21,7 @@
     "Info Info Ressource4 Combat" 1fr
     "Craft Craft Craft Combat" 5fr
     / 1,5fr 1,5fr 1fr 6fr;
-  gap: 10px;
+  gap: 5px;
 }
 
 .layout > div {
