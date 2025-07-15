@@ -1,1 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Farm Clicker</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <h1>Farm Clicker</h1>
+
+  <!-- Production Section -->
+  <div class="section">
+    <div id="resource-count">You have 0 wheat</div>
+    <div id="farmer-count">You have 0 farmers</div>
+    <div class="button-row">
+      <button onclick="harvestWheat()">Harvest Wheat 🌾</button>
+    </div>
+  </div>
+
+  <!-- Purchase Section -->
+  <div class="section">
+    <div class="button-row">
+      <button id="buy-farmer-btn" onclick="buyFarmer()">Buy Farmer 👨‍🌾 (10 wheat)</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
