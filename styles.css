@@ -6,10 +6,17 @@
     "Ore Ressource3 Ressource2 Info2" 20%
     "Info Info Ressource4 Combat" 20%
     "Craft Craft Craft Combat" auto
-    / 15% 15% 10% auto;
+    / 20% 20% 10% auto;
   gap: 10px;
 }
 
+.layout > div {
+  border: 1px solid #000000;
+  background-color: #aaa;
+  border-radius: 4px;
+  min-height: 100px;
+  text-align: left;
+}
 
 .Wood { grid-area: Wood; }
 .Food { grid-area: Food; }
@@ -27,14 +34,14 @@
 .button-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 5px;
   margin-top: 10px;
 }
 
 button {
   flex: 1;
   min-width: 80px;
-  font-size: 26px;
+  font-size: 11px;
   padding: 5px;
   cursor: pointer;
 }
