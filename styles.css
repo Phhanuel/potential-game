@@ -10,11 +10,6 @@
   gap: 8px;
 }
 
-.layout > div {
-  border: 1px solid #aaa;
-  padding: 10px;
-  background-color: #f9f9f9;
-}
 
 .Wood { grid-area: Wood; }
 .Food { grid-area: Food; }
@@ -29,3 +24,23 @@
 .Combat { grid-area: Combat; }
 .Craft { grid-area: Craft; }
 
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+button {
+  flex: 1;
+  min-width: 120px;
+  font-size: 16px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
