@@ -1,67 +1,31 @@
-body {
-  font-family: sans-serif;
+.layout {
+  background-color: #e0e0e0;
+  border: 1px solid #aaa;
+  padding: 10px;
   text-align: center;
-  margin-top: 50px;
-  background-color: #f0f0f0;
+  font-weight: bold;
+  width: 100%;
+
+  display: grid;
+  grid:
+    "Wood Food Ressource1 Log" 15%
+    "Ore Ressource3 Ressource2 Info2" 15%
+    "Info Info Ressource4 Combat" 15%
+    "Craft Craft Craft Combat" auto
+    / 15% 15% 10% auto;
+  gap: 8px;
 }
 
-.container {
-  display: flex;
-  gap: 40px;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  max-width: 100%;
-  box-sizing: border-box;
-}
-
-.section {
-  background-color: #f4f4f4;
-  padding: 20px;
-  border-radius: 10px;
-  flex: 1;
-}
-
-.button-row {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 15px;
-}
-
-button {
-  font-size: 18px;
-  padding: 10px 20px;
-  cursor: pointer;
-}
-
-button:disabled {
-  background-color: #ccc;
-  color: #666;
-  cursor: not-allowed;
-}
-
-.main-layout {
-  display: flex;
-  height: 100vh;
-}
-
-/* Colonne gauche */
-.left-panel {
-  width: 40%; /* ou 30% si tu veux un peu plus étroit */
-  min-width: 300px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 20px;
-  background-color: #f8f9fa;
-  box-sizing: border-box;
-
-}
-
-/* Colonne droite */
-.right-panel {
-  flex: 1;
-  padding: 20px;
-  background-color: #ffffff;
-  border-left: 2px solid #ccc;
-}
+.Wood { grid-area: Wood; }
+.Food { grid-area: Food; }
+.Ressource1 { grid-area: Ressource1; }
+.Log { grid-area: Log; }
+.Ore { grid-area: Ore; }
+.Ressource3 { grid-area: Ressource3; }
+.Ressource2 { grid-area: Ressource2; }
+.Info2 { grid-area: Info2; }
+.Info { grid-area: Info; }
+.Ressource4 { grid-area: Ressource4; }
+.Combat { grid-area: Combat; }
+.Craft { grid-area: Craft; }
 

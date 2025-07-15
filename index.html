@@ -8,53 +8,81 @@
 <body>
 
 <h1>Farm Clicker</h1>
-  <div class="main-layout">
-    <!-- Partie gauche : production + achats -->
-    <div class="left-panel">
-      <!-- Production Section -->
-      <div class="container">
-        <div class="section">
-          <h2>FOOD</h2>
-          <div id="wheat-count">Loading...</div>
-          <div id="farmer-count">Loading...</div>
-        </div>
-      
-        <div class="section wood">
-          <h2>Wood</h2>
-          <div id="wood-count">Loading...</div>
-          <div id="lumberjack-count">Loading...</div>
-        </div>
 
-        <div class="section ore">
-          <h2>Ore</h2>
-          <div id="ore-count">Loading...</div>
-          <div id="miner-count">Loading...</div>
-        </div>
-      </div>
-  
-      <!-- Purchase Section -->
-      <div class="container">
-        <div class="section">
-          <div class="button-row">
-            <button id="buy-farmer-btn" onclick="buyFarmer()">Buy Farmer 👨‍🌾 (10 wheat)</button>
-          </div>
+<section class="layout">
 
-        <div class="button-row">
-          <button id="buy-lumberjack-btn" onclick="buyLumberjacks()">Buy Lumberjacks  🪓  (15 wheat)</button>
-        </div>
+  <!-- Ligne 1 -->
+  <div class="Wood">
+    <h2>Wood</h2>
+    <div id="wood-count">Loading...</div>
+    <div id="lumberjack-count">Loading...</div>
+  </div>
 
-        <div class="button-row">
-          <button id="buy-miner-btn" onclick="buyMiner()">Buy Miner ⛏️ (15 wheat)</button>
-        </div>
-      </div>
+  <div class="Food">
+    <h2>Food</h2>
+    <div id="wheat-count">Loading...</div>
+    <div id="farmer-count">Loading...</div>
+  </div>
+
+  <div class="Ressource1">
+    <h2>Other Resource</h2>
+    <div id="resource1-count">0</div>
+  </div>
+
+  <div class="Log">
+    <h2>Log</h2>
+    <div id="game-log">No events yet.</div>
+  </div>
+
+  <!-- Ligne 2 -->
+  <div class="Ore">
+    <h2>Ore</h2>
+    <div id="ore-count">0</div>
+    <div id="miner-count">0 miners</div>
+  </div>
+
+  <div class="Ressource3">
+    <h2>Resource 3</h2>
+    <div id="resource3-count">0</div>
+  </div>
+
+  <div class="Ressource2">
+    <h2>Resource 2</h2>
+    <div id="resource2-count">0</div>
+  </div>
+
+  <div class="Info2">
+    <h2>Tips</h2>
+    <p>Click a button to hire units.</p>
+  </div>
+
+  <!-- Ligne 3 -->
+  <div class="Info">
+    <h2>Game Info</h2>
+    <p>Track stats, version, etc.</p>
+  </div>
+
+  <div class="Ressource4">
+    <h2>Resource 4</h2>
+    <div id="resource4-count">0</div>
+  </div>
+
+  <div class="Combat">
+    <h2>Combat</h2>
+    <p>Coming soon...</p>
+  </div>
+
+  <!-- Ligne 4 -->
+  <div class="Craft">
+    <h2>Craft</h2>
+    <div class="button-row">
+      <button id="buy-farmer-btn" onclick="buyFarmer()">Buy Farmer 🌾 (10 wheat)</button>
+      <button id="buy-lumberjack-btn" onclick="buyLumberjacks()">Buy Lumberjack 🪓 (15 wheat)</button>
+      <button id="buy-miner-btn" onclick="buyMiner()">Buy Miner ⛏️ (15 wheat)</button>
     </div>
+  </div>
 
-    <!-- Partie droite : vide pour l'instant -->
-    <div class="right-panel">
-      <h2>Coming Soon</h2>
-      <p>Combat system or other features will be here.</p>
-    </div>
-  </div>  
+</section>
 
   <script src="script.js"></script>
 </body>
