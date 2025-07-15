@@ -2,6 +2,8 @@ let wheat = 0;
 let wood = 0;
 let farmers = 0;
 let lumberjacks = 0;
+
+
 const farmerCost = 10;
 const lumberjackCost = 10;
 
@@ -18,7 +20,7 @@ function buyFarmer() {
   }
 }
 
-function buyLumbejacks() {
+function buyLumberjacks() {
   if (wheat >= lumberjackCost) {
     wheat -= lumberjackCost;
     lumberjacks++;
@@ -27,16 +29,13 @@ function buyLumbejacks() {
 }
 
 function updateDisplay() {
-  document.getElementById("resource-count").textContent = `You have ${wheat} wheat`;
+  document.getElementById("wheat-count").textContent = `You have ${wheat} wheat`;
   document.getElementById("farmer-count").textContent = `You have ${farmers} farmers`;
-  document.getElementById("resource-count").textContent = `You have ${wood} wheat`;
-  document.getElementById("lumberjack-count").textContent = `You have ${lumberjacks} farmers`;
+  document.getElementById("wood-count").textContent = `You have ${wood} wood`;
+  document.getElementById("lumberjack-count").textContent = `You have ${lumberjacks} lumberjacks`;
 
-  const buyButton = document.getElementById("buy-farmer-btn");
-  buyButton.disabled = wheat < farmerCost;
-
-  const buyButtonLum = document.getElementById("buy-lumberjack-btn");
-  buyButtonLum.disabled = wheat < lumberjackCost;
+  document.getElementById("buy-farmer-btn").disabled = wheat < farmerCost;
+  document.getElementById("buy-lumberjack-btn").disabled = wheat < lumberjackCost;
 
 }
 
