@@ -9,6 +9,9 @@ body {
   display: flex;
   gap: 40px;
   justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .section {
@@ -44,11 +47,14 @@ button:disabled {
 /* Colonne gauche */
 .left-panel {
   width: 40%; /* ou 30% si tu veux un peu plus étroit */
+  min-width: 300px;
   display: flex;
   flex-direction: column;
   gap: 20px;
   padding: 20px;
   background-color: #f8f9fa;
+  box-sizing: border-box;
+
 }
 
 /* Colonne droite */
