@@ -33,6 +33,7 @@ button {
 }
 
 button:disabled {
-  opacity: 0.5;
+  background-color: #ccc;
+  color: #666;
   cursor: not-allowed;
 }
