@@ -1,11 +1,5 @@
 .layout {
-  background-color: #e0e0e0;
-  border: 1px solid #aaa;
-  padding: 10px;
-  text-align: center;
-  font-weight: bold;
   width: 100%;
-
   display: grid;
   grid:
     "Wood Food Ressource1 Log" 15%
@@ -14,6 +8,12 @@
     "Craft Craft Craft Combat" auto
     / 15% 15% 10% auto;
   gap: 8px;
+}
+
+.layout > div {
+  border: 1px solid #aaa;
+  padding: 10px;
+  background-color: #f9f9f9;
 }
 
 .Wood { grid-area: Wood; }
