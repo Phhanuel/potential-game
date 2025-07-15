@@ -1,4 +1,4 @@
-let wheat = 10; // Starting wheat amount
+let wheat = 100; // Starting wheat amount
 let wood = 0; // Starting wood amount
 let farmers = 0; // Starting farmers amount
 let lumberjacks = 0; // Starting lumberjacks amount
