@@ -23,10 +23,10 @@ function updateDisplay() {
   buyButton.disabled = wheat < farmerCost;
 }
 
-// Production automatique toutes les 2 secondes
+// Production automatique toutes les 1 secondes
 setInterval(() => {
   wheat += farmers;
   updateDisplay();
-}, 2000);
+}, 1000);
 
 updateDisplay(); // Initialisation au chargement
