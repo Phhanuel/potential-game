@@ -15,7 +15,7 @@
   background-color: #aaa;
   border-radius: 4px;
   min-height: 100px;
-  text-align: left;
+  text-align: center;
 }
 
 .Wood { grid-area: Wood; }
@@ -41,7 +41,7 @@
 button {
   flex: 1;
   min-width: 80px;
-  font-size: 16px;
+  font-size: 20px;
   padding: 5px;
   cursor: pointer;
 }
