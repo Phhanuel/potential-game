@@ -1,46 +1,46 @@
-let wheat = 0;
-let wood = 0;
-let farmers = 0;
-let lumberjacks = 0;
+let wheat = 10; // Starting wheat amount
+let wood = 0; // Starting wood amount
+let farmers = 0; // Starting farmers amount
+let lumberjacks = 0; // Starting lumberjacks amount
 
 
-const farmerCost = 10;
-const lumberjackCost = 10;
+const farmerCost = 10; // Cost to buy a farmer
+const lumberjackCost = 15; // Cost to buy a lumberjack
 
-function harvestWheat() {
-  wheat++;
-  updateDisplay();
-}
+//function harvestWheat() {
+  //wheat++;
+  //updateDisplay();
+//}
 
-function buyFarmer() {
-  if (wheat >= farmerCost) {
+function buyFarmer() { // Function to buy a farmer
+  if (wheat >= farmerCost) { // Check if enough wheat to buy a farmer
     wheat -= farmerCost;
-    farmers++;
+    farmers++; // Increment the number of farmers
     updateDisplay();
   }
 }
 
-function buyLumberjacks() {
-  if (wheat >= lumberjackCost) {
+function buyLumberjacks() { // Function to buy a lumberjack
+  if (wheat >= lumberjackCost) { // Check if enough wheat to buy a lumberjack
     wheat -= lumberjackCost;
-    lumberjacks++;
+    lumberjacks++; // Increment the number of lumberjacks
     updateDisplay();
   }
 }
 
-function updateDisplay() {
+function updateDisplay() { // Function to update the display
   document.getElementById("wheat-count").textContent = `You have ${wheat} wheat`;
   document.getElementById("farmer-count").textContent = `You have ${farmers} farmers`;
   document.getElementById("wood-count").textContent = `You have ${wood} wood`;
   document.getElementById("lumberjack-count").textContent = `You have ${lumberjacks} lumberjacks`;
 
-  document.getElementById("buy-farmer-btn").disabled = wheat < farmerCost;
-  document.getElementById("buy-lumberjack-btn").disabled = wheat < lumberjackCost;
+  document.getElementById("buy-farmer-btn").disabled = wheat < farmerCost; // Disable button if not enough wheat
+  document.getElementById("buy-lumberjack-btn").disabled = wheat < lumberjackCost; // Disable button if not enough wheat
 
 }
 
-// Production automatique toutes les 1 secondes
-setInterval(() => {
+
+setInterval(() => { // Production automatique toutes les 1 secondes
   wheat += farmers;
   wood += lumberjacks;
 
