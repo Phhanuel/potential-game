@@ -8,15 +8,13 @@
 <body>
 
   <h1>Farm Clicker</h1>
-<div class="main-layout">
-  <div class="left-panel">
-    
-    <!-- Production Section -->
-    <div class="container production">
-      <div class="section wheat">
-        <h2>FOOD</h2>
-        <div id="wheat-count">Loading...</div>
-       <div id="farmer-count">Loading...</div>
+
+  <!-- Production Section -->
+   <div class="container">
+    <div class="section">
+      <h2>FOOD</h2>
+      <div id="wheat-count">Loading...</div>
+     <div id="farmer-count">Loading...</div>
     </div>
       
     <div class="section wood">
@@ -24,27 +22,19 @@
       <div id="wood-count">Loading...</div>
       <div id="lumberjack-count">Loading...</div>
     </div>
+  </div>
   
-
-    <!-- Purchase Section -->
-    <div class="container">
-      <div class="section">
-        <div class="button-row">
-          <button id="buy-farmer-btn" onclick="buyFarmer()">Buy Farmer 👨‍🌾 (10 wheat)</button>
-        </div>
-        <div class="button-row">
-          <button id="buy-lumberjack-btn" onclick="buyLumberjacks()">Buy Lumberjacks  🪓  (15 wheat)</button>
-        </div>
+  <!-- Purchase Section -->
+  <div class="container">
+    <div class="section">
+      <div class="button-row">
+        <button id="buy-farmer-btn" onclick="buyFarmer()">Buy Farmer 👨‍🌾 (10 wheat)</button>
       </div>
+      <div class="button-row">
+        <button id="buy-lumberjack-btn" onclick="buyLumberjacks()">Buy Lumberjacks  🪓  (15 wheat)</button>
+     </div>
     </div>
   </div>
-
-  <!-- Colonne de droite (vide pour l'instant) -->
-  <div class="right-panel">
-    <!-- Tu pourras ajouter ici des combats, statistiques, etc. -->
-  </div>
-</div>
- 
 
   <script src="script.js"></script>
 </body>
