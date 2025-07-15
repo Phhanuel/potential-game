@@ -2,11 +2,11 @@
   width: 100%;
   display: grid;
   grid:
-    "Wood Food Ressource1 Log" 20%
-    "Ore Ressource3 Ressource2 Info2" 20%
-    "Info Info Ressource4 Combat" 20%
-    "Craft Craft Craft Combat" 40%
-    / 20% 20% 10% 50%;
+    "Wood Food Ressource1 Log" auto
+    "Ore Ressource3 Ressource2 Info2" auto
+    "Info Info Ressource4 Combat" auto
+    "Craft Craft Craft Combat" auto
+    / 1fr 1fr 1fr 2fr;
   gap: 10px;
 }
 
