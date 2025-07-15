@@ -48,12 +48,14 @@ button:disabled {
   flex-direction: column;
   gap: 20px;
   padding: 20px;
-  background-color: #f0f0f0;
+  background-color: #f8f9fa;
 }
 
-/* Colonne droite vide */
+/* Colonne droite */
 .right-panel {
-  flex: 1; /* prend le reste de l’espace */
-  background-color: #ffffff;
+  flex: 1;
   padding: 20px;
+  background-color: #ffffff;
+  border-left: 2px solid #ccc;
 }
+
