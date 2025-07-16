@@ -84,6 +84,10 @@ function updateDisplay() { // Function to update the display
   document.getElementById("buy-miner-btn").disabled = wheat < minerCost; // Disable button if not enough wheat
   document.getElementById("buy-warehouse-btn").disabled = wood < WoodWarehouseCost || ore < OreWarehouseCost; // Disable button if not enough resources
 
+ 
+document.getElementById("wheat-bar").style.width = `${(wheat / maxwheat) * 100}%`;
+document.getElementById("wood-bar").style.width = `${(wood / maxwood) * 100}%`;
+document.getElementById("ore-bar").style.width = `${(ore / maxore) * 100}%`;
 }
 
 
