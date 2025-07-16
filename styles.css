@@ -8,6 +8,7 @@
     "Craft Craft Craft Combat" auto
     / 20% 20% 10% auto;
   gap: 10px;
+  height: 100vh;
 }
 
 .layout > div {
@@ -81,4 +82,10 @@ h2 {
   text-align: center;
   margin-top: 5px;
   margin-bottom: 5px;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
