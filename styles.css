@@ -4,7 +4,7 @@
   grid:
     "Wood Food Ressource1 Log" 20%
     "Ore Ressource3 Ressource2 Info2" 20%
-    "Info Info Ressource4 Combat" 20%
+    "Info Info Blood Combat" 20%
     "Craft Craft Craft Combat" 40%
     / 20% 20% 10% 50%;
   gap: 10px;
@@ -55,7 +55,7 @@ button:disabled {
 }
 
 .resource-bar {
-  wwidth: 100%;
+  width: 80%;
   max-width: 100%;
   height: 18px;
   background-color: #ddd;
