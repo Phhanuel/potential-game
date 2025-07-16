@@ -7,7 +7,7 @@
     "Info Info Blood Combat" 20%
     "Craft Craft Craft Combat" 40%
     / 20% 20% 10% 50%;
-  gap: 10px;
+  gap: 5px;
 }
 
 .layout > div {
@@ -16,8 +16,7 @@
   border-radius: 4px;
   min-height: 100px;
   text-align: center;
-  box-sizing: border-box;
-
+  
 }
 
 .Wood { grid-area: Wood; }
