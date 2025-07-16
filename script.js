@@ -88,17 +88,10 @@ function updateDisplay() { // Function to update the display
 
 
 setInterval(() => { // Production automatique toutes les 1 secondes
-  while (wheat < maxwheat) { 
     wheat = Math.min(wheat + farmers, maxwheat);
-  }
-
-  while (wood < maxwood) { 
     wood = Math.min(wood + lumberjacks, maxwood);
-  }
-
-  while (ore < maxore) { 
     ore = Math.min(ore + miners, maxore);
-  }
+
 
   updateDisplay();
 }, 1000);
