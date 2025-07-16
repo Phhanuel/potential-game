@@ -18,7 +18,6 @@
   text-align: center;
 }
 
-
 .Wood { grid-area: Wood; }
 .Food { grid-area: Food; }
 .Ressource1 { grid-area: Ressource1; }
@@ -51,4 +50,20 @@ button:disabled {
   background-color: #ccc;
   color: #666;
   cursor: not-allowed;
+}
+
+.resource-bar {
+  width: 100%;
+  height: 12px;
+  background-color: #ddd;
+  border: 1px solid #999;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+.bar-inner {
+  height: 100%;
+  background-color: green;
+  width: 0%; /* sera mis à jour dynamiquement */
+  border-radius: 4px;
 }
