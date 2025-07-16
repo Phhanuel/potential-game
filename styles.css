@@ -6,8 +6,8 @@
     "Ore Ressource3 Ressource2 Info2" 20%
     "Info Info Blood Combat" 20%
     "Craft Craft Craft Combat" 40%
-    / 20% 20% 10% 50%;
-  gap: 5px;
+    / 20% 20% 10% auto;
+  gap: 10px;
 }
 
 .layout > div {
