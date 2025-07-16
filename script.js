@@ -15,6 +15,7 @@ let WoodWarehouseCost = 100;
 let OreWarehouseCost = 100;
 
 
+
 const farmerCost = 10; // Cost to buy a farmer
 const lumberjackCost = 15; // Cost to buy a lumberjack
 const minerCost = 15; // Cost to buy a miner

@@ -18,6 +18,7 @@
   text-align: center;
 }
 
+
 .Wood { grid-area: Wood; }
 .Food { grid-area: Food; }
 .Ressource1 { grid-area: Ressource1; }
