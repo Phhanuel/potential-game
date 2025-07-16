@@ -71,3 +71,8 @@ button:disabled {
   width: 0%; /* sera mis à jour dynamiquement */
   border-radius: 4px;
 }
+
+h1 {
+  text-align: center;
+  margin-top: 10px;
+}
